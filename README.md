@@ -2,6 +2,8 @@
 
 This is an example application to showcase how I was able to get async sockets working with GPUI.
 
+![image](./assets/screenshot.png)
+
 The main rub comes down to leveraging channels.
 
 Our Web socket is split into a `read` Stream and `write` Sink via the futures extension(s).
