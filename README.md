@@ -37,3 +37,24 @@ List View <-- Reads message from Channel <-- loop reads from socket read Stream 
 
 We hand our outgoing_ch to a Controls view.
 This view has a submit method that takes the text input's content and places it in the channel.
+
+### Running the demo
+
+Please run the websocket server first (separate terminal):
+
+```bash
+cargo run --bin server
+```
+
+You can then run the app. I recommend running multiple apps as the server is just a broadcaster, so:
+
+```bash
+cargo build
+./target/debug/gpui-async
+```
+
+In again another terminal:
+
+```bash
+./target/debug/gpui-async
+```
