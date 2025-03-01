@@ -1,0 +1,18 @@
+[package]
+name = "gpui-async"
+version = "0.1.0"
+edition = "2021"
+default-run = "gpui-async"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[dependencies]
+async-channel = "2.3"
+async-std = "1"
+async-tungstenite = { version = "0.29", features = ["async-std-runtime"] }
+futures = "0.3"
+gpui = { git = "https://github.com/zed-industries/zed" }
+unicode-segmentation = "1"
+uuid = { version = "1.15.1", features = ["v4"] }
